@@ -376,6 +376,10 @@ table {
   height: 85px;
   align-items: center;
 }
+.main-section__logo {
+  width: 165px;
+}
+
 .nav-menu__list {
   display: flex;
 }

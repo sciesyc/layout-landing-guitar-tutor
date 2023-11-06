@@ -1,6 +1,13 @@
 @import "normalizez.scss"
 @import "resets.scss"
 
+*
+  box-sizing: border-box
+
+$color-blue: #5698F6
+$color-yellow: #F2CB00
+$color-grey: #CBCBCB
+
 .container
   max-width: 1140px
   margin: 0 auto
@@ -26,3 +33,42 @@
     margin-right: 50px
     &:last-child
       margin-right: 0
+
+.left-wrapper
+  position: relative
+  &__img
+    position: relative
+    z-index: 5
+  &__rectangle-yellow
+    position: absolute
+    top: 94px
+    left: -69px
+    z-index: 3
+    width: 618px
+    height: 220px
+    border-radius: 100px
+    background: $color-yellow
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25)
+    transform: rotate(-63.912deg)
+  &__rectangle-blue
+    position: absolute
+    width: 200px
+    height: 618px
+    top: -70px
+    left: 187px
+    z-index: 2
+    background: $color-blue
+    border-radius: 100px
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+    transform: rotate(45deg)
+  &__rectangle-grey
+    position: absolute
+    top: 170px
+    left: 20px
+    z-index: 1
+    width: 618px
+    height: 220px
+    border-radius: 100px
+    background: $color-grey
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25)
+    transform: rotate(-30deg)

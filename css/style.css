@@ -385,6 +385,7 @@ table {
 }
 .main-section__content-container {
   display: flex;
+  position: relative;
 }
 
 .nav-menu__list {
@@ -442,6 +443,20 @@ table {
   transform: rotate(-30deg);
 }
 
+.right-wrapper {
+  width: 409px;
+  position: absolute;
+  top: 106px;
+  left: 746px;
+}
+.right-wrapper__icons-box {
+  margin-bottom: 1px;
+  padding-left: 4px;
+}
+.right-wrapper__text {
+  font-size: 16px;
+  margin-bottom: 30px;
+}
 .icons {
   display: flex;
 }
@@ -453,11 +468,53 @@ table {
   height: 40px;
   border: 1px solid black;
   border-radius: 100px;
-  margin-right: 17px;
+  margin-right: 11px;
 }
 .icons__item:last-child {
   margin-right: 0;
 }
 .icons__item i {
   font-size: 21px;
+}
+
+.title {
+  font-size: 72px;
+  position: relative;
+  margin-bottom: 25px;
+}
+.title__hr {
+  width: 72px;
+  margin: 0;
+  position: absolute;
+  bottom: 5px;
+  border: 0;
+  border-top: 1px solid;
+}
+
+.buttons {
+  display: flex;
+}
+.buttons__main-btn {
+  width: 145px;
+  height: 50px;
+  margin-right: 40px;
+  background-color: #5698F6;
+  border: none;
+  border-radius: 20px;
+  color: #FFF;
+  font-size: 14px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+.buttons__icon-btn {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 14px;
+}
+.buttons__icon-btn__text {
+  font-size: 14px;
+}
+.buttons img {
+  margin-right: 10px;
 }/*# sourceMappingURL=style.css.map */

@@ -13,9 +13,11 @@ $color-grey: #CBCBCB
   margin: 0 auto
 
 .main-section
-  height: 800px
+  position: relative
+  min-height: 800px
   background: #DFDFDF
   padding-top: 17px
+  overflow: hidden
   &__nav-container
     display: flex
     justify-content: space-between
@@ -27,6 +29,14 @@ $color-grey: #CBCBCB
   &__content-container
     display: flex
     position: relative
+  &__first-elipse
+    position: absolute
+    right: 73px
+    top: -8px
+  &__second-elipse
+    position: absolute
+    top: 650px
+    right: -40px
 
 .nav-menu
   &__list
@@ -139,3 +149,24 @@ $color-grey: #CBCBCB
       font-size: 14px
   img
     margin-right: 10px
+
+.elipse
+  display: flex
+  justify-content: center
+  align-items: center
+  width: 150.072px
+  height: 143.075px
+  border-radius: 150px
+  background: linear-gradient(136deg, #F2CB00 33.69%, #5698F6 55.04%, #7A7A7A 82.75%)
+  &--big
+    width: 209.879px
+    height: 218.738px
+    transform: rotate(105.603deg)
+  &__substract
+    width: 102.581px
+    height: 97.798px
+    border-radius: 150px
+    background: #D9D9D9
+    &--big
+      width: 143.462px
+      height: 149.517px

@@ -554,4 +554,56 @@ table {
 .elipse__substract--big {
   width: 143.462px;
   height: 149.517px;
+}
+
+.second-section {
+  min-height: 701px;
+}
+.second-section__container {
+  padding-top: 31.66px;
+}
+.second-section__title {
+  margin-bottom: 52px;
+}
+.second-section__cards-box {
+  display: flex;
+  column-gap: 30px;
+}
+.second-section__cards-item {
+  display: flex;
+}
+
+.cards-item {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  width: 360px;
+  height: 360px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  background-color: #CBCBCB;
+}
+.cards-item__img {
+  height: 345px;
+  max-width: 216px;
+}
+.cards-item__text {
+  position: absolute;
+  top: 144px;
+  right: -45px;
+  font-size: 40px;
+  width: 280px;
+  height: 88px;
+  text-align: center;
+  transform: rotate(90deg);
+}
+.cards-item--blue {
+  background-color: #5698F6;
+}
+.cards-item--yellow {
+  background-color: #F2CB00;
+}
+
+.img-acoustic-guitar {
+  margin-left: 52px;
 }/*# sourceMappingURL=style.css.map */

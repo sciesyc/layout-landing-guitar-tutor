@@ -557,6 +557,7 @@ table {
 }
 
 .second-section {
+  position: relative;
   min-height: 701px;
 }
 .second-section__container {
@@ -568,9 +569,42 @@ table {
 .second-section__cards-box {
   display: flex;
   column-gap: 30px;
+  margin-bottom: 36px;
 }
 .second-section__cards-item {
   display: flex;
+}
+.second-section__icons-box {
+  width: 1003px;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0 auto;
+}
+.second-section__first-elipse {
+  position: absolute;
+  top: 119px;
+  right: 94px;
+  z-index: -1;
+  width: 107.65px;
+  height: 107.65px;
+}
+.second-section__first-elipse .elipse__substract {
+  width: 73.59px;
+  height: 73.59px;
+  background-color: white;
+}
+.second-section__second-elipse {
+  position: absolute;
+  top: 322px;
+  left: 20px;
+  z-index: -1;
+  width: 234.34px;
+  height: 234.34px;
+}
+.second-section__second-elipse .elipse__substract {
+  width: 160.19px;
+  height: 160.19px;
+  background-color: white;
 }
 
 .cards-item {
@@ -606,4 +640,21 @@ table {
 
 .img-acoustic-guitar {
   margin-left: 52px;
+}
+
+.icons-item {
+  display: flex;
+  align-items: center;
+}
+.icons-item__img {
+  width: 80px;
+  height: 80px;
+  margin-right: 8px;
+}
+.icons-item__text {
+  width: 121px;
+  height: 52px;
+}
+.icons-item span {
+  font-size: 40px;
 }/*# sourceMappingURL=style.css.map */

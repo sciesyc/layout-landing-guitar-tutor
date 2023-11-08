@@ -6,7 +6,8 @@
 
 $color-blue: #5698F6
 $color-yellow: #F2CB00
-$color-grey: #CBCBCB
+$color-light-grey: #f0f0f0
+$color-dark-grey: #CBCBCB
 
 .container
   max-width: 1140px
@@ -15,7 +16,7 @@ $color-grey: #CBCBCB
 .main-section
   position: relative
   min-height: 800px
-  background: #DFDFDF
+  background: $color-light-grey
   padding-top: 17px
   overflow: hidden
   &__nav-container
@@ -37,6 +38,64 @@ $color-grey: #CBCBCB
     position: absolute
     top: 650px
     right: -40px
+  &__left-wrapper
+    position: relative
+    &__img
+
+      position: relative
+      z-index: 5
+    &__rectangle-yellow
+      position: absolute
+      top: 94px
+      left: -69px
+      z-index: 3
+      width: 618px
+
+      height: 220px
+      border-radius: 100px
+      background: $color-yellow
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25)
+      transform: rotate(-63.912deg)
+    &__rectangle-blue
+      position: absolute
+      width: 200px
+      height: 618px
+      top: -70px
+      left: 187px
+      z-index: 2
+      background: $color-blue
+
+      border-radius: 100px
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+      transform: rotate(45deg)
+    &__rectangle-grey
+      position: absolute
+      top: 170px
+      left: 20px
+      z-index: 1
+      width: 618px
+
+      height: 220px
+      border-radius: 100px
+      background: $color-dark-grey
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25)
+      transform: rotate(-30deg)
+  &__right-wrapper
+    width: 409px
+    position: absolute
+    top: 106px
+    left: 746px
+    &__icons-box
+      margin-bottom: 1px
+
+      padding-left: 4px
+    &__title
+      margin-bottom: 25px
+
+    &__text
+      font-size: 16px
+      margin-bottom: 30px
+    &__button
 
 .nav-menu
   &__list
@@ -46,58 +105,6 @@ $color-grey: #CBCBCB
     margin-right: 50px
     &:last-child
       margin-right: 0
-
-.left-wrapper
-  position: relative
-  &__img
-    position: relative
-    z-index: 5
-  &__rectangle-yellow
-    position: absolute
-    top: 94px
-    left: -69px
-    z-index: 3
-    width: 618px
-    height: 220px
-    border-radius: 100px
-    background: $color-yellow
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25)
-    transform: rotate(-63.912deg)
-  &__rectangle-blue
-    position: absolute
-    width: 200px
-    height: 618px
-    top: -70px
-    left: 187px
-    z-index: 2
-    background: $color-blue
-    border-radius: 100px
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
-    transform: rotate(45deg)
-  &__rectangle-grey
-    position: absolute
-    top: 170px
-    left: 20px
-    z-index: 1
-    width: 618px
-    height: 220px
-    border-radius: 100px
-    background: $color-grey
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25)
-    transform: rotate(-30deg)
-
-.right-wrapper
-  width: 409px
-  position: absolute
-  top: 106px
-  left: 746px
-  &__icons-box
-    margin-bottom: 1px
-    padding-left: 4px
-  &__text
-    font-size: 16px
-    margin-bottom: 30px
-  &__button
 
 .icons
   display: flex
@@ -118,7 +125,6 @@ $color-grey: #CBCBCB
 .title
   font-size: 72px
   position: relative
-  margin-bottom: 25px
   &__hr
     width: 72px
     margin: 0
@@ -166,7 +172,7 @@ $color-grey: #CBCBCB
     width: 102.581px
     height: 97.798px
     border-radius: 150px
-    background: #D9D9D9
+    background: $color-light-grey
     &--big
       width: 143.462px
       height: 149.517px
@@ -206,6 +212,7 @@ $color-grey: #CBCBCB
     left: 20px
     z-index: -1
     width: 234.34px
+
     height: 234.34px
     .elipse__substract
       width: 160.19px
@@ -220,7 +227,7 @@ $color-grey: #CBCBCB
   height: 360px
   border-radius: 10px
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25)
-  background-color: $color-grey
+  background-color: $color-dark-grey
   &__img
     height: 345px
     max-width: 216px
@@ -242,6 +249,7 @@ $color-grey: #CBCBCB
   margin-left: 52px
 
 .icons-item
+
   display: flex
   align-items: center
   &__img
@@ -253,3 +261,56 @@ $color-grey: #CBCBCB
     height: 52px
   span
     font-size: 40px
+
+.third-section
+  position: relative
+  display: flex
+  flex-direction: column
+  min-height: 723px
+  background-color: $color-light-grey
+  z-index: 0
+  overflow: hidden
+  &__container
+    position: relative
+    display: flex
+    padding: 30px 0 0 73px
+    align-items: center
+    justify-content: space-between
+  &__right-wrapper
+    max-width: 552px
+  &__title
+    margin-bottom: 20px
+  &__text
+    font-size: 18px
+    margin-bottom: 25px
+  &__first-elipse
+    position: absolute
+    top: 155px
+    left: -116px
+    width: 234px
+    height: 234px
+    z-index: -1
+    .elipse__substract
+      width: 160px
+      height: 160px
+  &__second-elipse
+    position: absolute
+    width: 231px
+    height: 231px
+    transform: rotate(-33.97deg)
+    right: -70px
+    top: -70px
+    .elipse__substract
+      width: 158px
+      height: 158px
+  &__figure
+    position: absolute
+    top: 255px
+    left: -170px
+
+  &__left-wrapper
+    // position: relative
+    // width: 686px
+
+.title__hr--top
+  bottom: 75px

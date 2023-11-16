@@ -364,9 +364,27 @@ table {
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "MontseratT";
+  src: url(../fonts/Montserrat-Regular.ttf);
+  font-weight: regular;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MontseratT";
+  src: url(../fonts/Montserrat-SemiBolds.ttf);
+  font-weight: bold;
+  font-style: normal;
+}
+html {
+  font-family: "MontseratT";
+  font-weight: regular;
+}
+
 .container {
   max-width: 1140px;
   margin: 0 auto;
+  position: relative;
 }
 
 .main-section {
@@ -452,18 +470,20 @@ table {
   margin-bottom: 1px;
   padding-left: 4px;
 }
-.main-section__right-wrapper__title {
+.main-section__title {
   margin-bottom: 25px;
 }
-.main-section__right-wrapper__text {
+.main-section__text {
   font-size: 16px;
   margin-bottom: 30px;
 }
+
 .nav-menu__list {
   display: flex;
 }
 .nav-menu__list-item {
   font-size: 18px;
+  font-weight: bold;
   margin-right: 50px;
 }
 .nav-menu__list-item:last-child {
@@ -493,12 +513,14 @@ table {
 .title {
   font-size: 72px;
   position: relative;
+  font-weight: bold;
 }
 .title__hr {
   width: 72px;
   margin: 0;
   position: absolute;
   bottom: 5px;
+  left: 1px;
   border: 0;
   border-top: 1px solid;
 }
@@ -515,6 +537,7 @@ table {
   border-radius: 20px;
   color: #FFF;
   font-size: 14px;
+  font-weight: bold;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   cursor: pointer;
 }
@@ -630,6 +653,7 @@ table {
   height: 88px;
   text-align: center;
   transform: rotate(90deg);
+  font-weight: bold;
 }
 .cards-item--blue {
   background-color: #5698F6;
@@ -652,16 +676,16 @@ table {
   margin-right: 8px;
 }
 .icons-item__text {
-  width: 121px;
+  width: 138px;
   height: 52px;
 }
 .icons-item span {
   font-size: 40px;
+  font-weight: bold;
 }
 
 .third-section {
   position: relative;
-  display: flex;
   flex-direction: column;
   min-height: 723px;
   background-color: #f0f0f0;
@@ -669,7 +693,6 @@ table {
   overflow: hidden;
 }
 .third-section__container {
-  position: relative;
   display: flex;
   padding: 30px 0 0 73px;
   align-items: center;
@@ -687,8 +710,8 @@ table {
 }
 .third-section__first-elipse {
   position: absolute;
-  top: 155px;
-  left: -116px;
+  top: 206px;
+  left: -16.65px;
   width: 234px;
   height: 234px;
   z-index: -1;
@@ -711,9 +734,28 @@ table {
 }
 .third-section__figure {
   position: absolute;
-  top: 255px;
-  left: -170px;
+  left: -101px;
+  top: 305px;
 }
+.third-section__left-wrapper {
+  width: 480px;
+}
+
 .title__hr--top {
   bottom: 75px;
+}
+
+.footer__title {
+  margin-bottom: 15px;
+}
+.footer__img {
+  position: absolute;
+  left: -250px;
+  bottom: 0px;
+}
+.footer__container {
+  min-height: 273px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }/*# sourceMappingURL=style.css.map */

@@ -4,6 +4,22 @@
 *
   box-sizing: border-box
 
+@font-face
+  font-family: "MontseratT"
+  src: url(../fonts/Montserrat-Regular.ttf)
+  font-weight: regular
+  font-style: normal
+
+@font-face
+  font-family: "MontseratT"
+  src: url(../fonts/Montserrat-SemiBolds.ttf)
+  font-weight: bold
+  font-style: normal
+
+html
+  font-family: "MontseratT"
+  font-weight: regular
+
 $color-blue: #5698F6
 $color-yellow: #F2CB00
 $color-light-grey: #f0f0f0
@@ -12,6 +28,7 @@ $color-dark-grey: #CBCBCB
 .container
   max-width: 1140px
   margin: 0 auto
+  position: relative
 
 .main-section
   position: relative
@@ -41,7 +58,6 @@ $color-dark-grey: #CBCBCB
   &__left-wrapper
     position: relative
     &__img
-
       position: relative
       z-index: 5
     &__rectangle-yellow
@@ -87,21 +103,19 @@ $color-dark-grey: #CBCBCB
     left: 746px
     &__icons-box
       margin-bottom: 1px
-
       padding-left: 4px
-    &__title
-      margin-bottom: 25px
-
-    &__text
-      font-size: 16px
-      margin-bottom: 30px
-    &__button
+  &__title
+    margin-bottom: 25px
+  &__text
+    font-size: 16px
+    margin-bottom: 30px
 
 .nav-menu
   &__list
     display: flex
   &__list-item
     font-size: 18px
+    font-weight: bold
     margin-right: 50px
     &:last-child
       margin-right: 0
@@ -125,11 +139,13 @@ $color-dark-grey: #CBCBCB
 .title
   font-size: 72px
   position: relative
+  font-weight: bold
   &__hr
     width: 72px
     margin: 0
     position: absolute
     bottom: 5px
+    left: 1px
     border: 0
     border-top: 1px solid
 
@@ -144,6 +160,7 @@ $color-dark-grey: #CBCBCB
     border-radius: 20px
     color: #FFF
     font-size: 14px
+    font-weight: bold
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25)
     cursor: pointer
   &__icon-btn
@@ -240,6 +257,7 @@ $color-dark-grey: #CBCBCB
     height: 88px
     text-align: center
     transform: rotate(90deg)
+    font-weight: bold
   &--blue
     background-color: $color-blue
   &--yellow
@@ -249,7 +267,6 @@ $color-dark-grey: #CBCBCB
   margin-left: 52px
 
 .icons-item
-
   display: flex
   align-items: center
   &__img
@@ -257,21 +274,20 @@ $color-dark-grey: #CBCBCB
     height: 80px
     margin-right: 8px
   &__text
-    width: 121px
+    width: 138px
     height: 52px
   span
     font-size: 40px
+    font-weight: bold
 
 .third-section
   position: relative
-  display: flex
   flex-direction: column
   min-height: 723px
   background-color: $color-light-grey
   z-index: 0
   overflow: hidden
   &__container
-    position: relative
     display: flex
     padding: 30px 0 0 73px
     align-items: center
@@ -285,8 +301,8 @@ $color-dark-grey: #CBCBCB
     margin-bottom: 25px
   &__first-elipse
     position: absolute
-    top: 155px
-    left: -116px
+    top: 206px
+    left: -16.65px
     width: 234px
     height: 234px
     z-index: -1
@@ -305,12 +321,23 @@ $color-dark-grey: #CBCBCB
       height: 158px
   &__figure
     position: absolute
-    top: 255px
-    left: -170px
-
+    left: -101px
+    top: 305px
   &__left-wrapper
-    // position: relative
-    // width: 686px
+    width: 480px
 
 .title__hr--top
   bottom: 75px
+
+.footer
+  &__title
+    margin-bottom: 15px
+  &__img
+    position: absolute
+    left: -250px
+    bottom: 0px
+  &__container
+    min-height: 273px
+    display: flex
+    align-items: center
+    justify-content: flex-end

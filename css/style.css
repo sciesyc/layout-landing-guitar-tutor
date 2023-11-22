@@ -584,10 +584,10 @@ html {
 }
 
 .second-section {
-  position: relative;
   min-height: 701px;
 }
 .second-section__container {
+  position: relative;
   padding-top: 31.66px;
 }
 .second-section__title {
@@ -609,8 +609,8 @@ html {
 }
 .second-section__first-elipse {
   position: absolute;
-  top: 119px;
-  right: 94px;
+  top: 200px;
+  right: 0px;
   z-index: -1;
   width: 107.65px;
   height: 107.65px;
